@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function Button() {
+  const [counter, setCounter] = React.useState(0);
   return (
-    <button>Test</button>
+    <button onClick={() => setCounter(counter+1)}>{counter}</button>
   );
 }
 

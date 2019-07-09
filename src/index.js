@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Button from './App';
 import * as serviceWorker from './serviceWorker';
+import ButtonApp from './ButtonApp';
 
-ReactDOM.render(<Button />, document.getElementById('root'));
+ReactDOM.render(
+    <ButtonApp />,
+    document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -4,10 +4,13 @@ import Display from './ButtonDisplay';
 
 function ButtonApp() {
     const [counter, setCounter] = React.useState(0);
-    const incrementCounter = () => setCounter(counter+1);
+    const incrementCounter = (incrementValue) => setCounter(counter+incrementValue);
     return (
         <div>
-            <Button incrementCounter={incrementCounter}/>
+            <Button incrementCounter={incrementCounter} increment={5}/>
+            <Button incrementCounter={incrementCounter} increment={10}/>
+            <Button incrementCounter={incrementCounter} increment={15}/>
+            <Button incrementCounter={incrementCounter} increment={20}/>
             <Display counter={counter}/>
         </div>
     );

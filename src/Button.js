@@ -2,9 +2,10 @@ import React from 'react';
 import './App.css';
 
 function Button(props) {
+  const handleClick = () => props.incrementCounter(props.increment);
   return (
-    <button onClick={props.incrementCounter}>
-      +1
+    <button onClick={handleClick}>
+      +{props.increment}
     </button>
   );
 }
